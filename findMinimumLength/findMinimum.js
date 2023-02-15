@@ -112,7 +112,7 @@ function solution(S) {
 }
 
 
-console.log(solution("azABaabza")) //ABaab
-console.log(solution("TacoCat")) //
-console.log(solution("AcZCbaBz")) // 8
-console.log(solution("abcdefghijklmnopqrstuvwxyz")) //
+console.log(solution("azABaabza")) //Output: 5
+console.log(solution("TacoCat")) // Output: -1
+console.log(solution("AcZCbaBz")) // Output: 8
+console.log(solution("abcdefghijklmnopqrstuvwxyz")) // Output: -1

@@ -27,4 +27,6 @@ Assume that:
  - string S consists only of letters ('a'-'z'and/or'A'-'Z').
 
 In your solution, focus on correctness. The performance of your solution
-will not be the focus of the assessment. -->
+will not be the focus of the assessment. 
+
+-->
