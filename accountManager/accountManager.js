@@ -1,3 +1,28 @@
+// This implementation uses Lodash to simplify some operations, 
+// like finding an account by ID or merging objects. It also follows a functional programming style,
+//  using immutable data structures and returning new objects instead of modifying the original ones.
+
+// The AccountManager class has four methods to add new accounts or users, and three methods to retrieve the existing ones. 
+// It also has several utility methods to handle the different types of accounts and users.
+
+// The findAccountById method receives an array of accounts (either LDAP or Azure) and a user ID,
+//  and returns the account object that matches that ID. 
+// The findUserById method is similar, but for users.
+
+// The getMissingAccounts method analyzes the list of users and returns two arrays, 
+// one with the users that have no LDAP account, and another with the users that have no Azure account.
+
+// The summarizeCountries method uses Lodash's countBy function to count
+//  how many users there are for each country, 
+// and returns an array of objects with the country name and the number of users.
+
+// The mergeAccounts method combines the information from all 
+// accounts and users into a single object for each user. 
+// It first creates a copy of the users array using _.map, and then uses _.merge to combine the properties 
+// from the LDAP and Azure accounts, as well as any extra properties from the users themselves.
+
+
+
 const _ = require('lodash');
 
 class AccountManager {
